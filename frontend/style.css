@@ -1,4 +1,4 @@
-* {
+ /* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -33,114 +33,42 @@ select {
 
 /*end of css reset*/ 
 
-#cube1 {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 400px;
-  height: 400px;
-  background-color: #3bd6c6;
-  /*padding-top: 10px;
-  padding-left: 10px;*/
-}
-
-#cube2, #cube3, #cube4, #cube5, #cube6, #cube7, #cube8, #cube9, #cube10 {
-  /*padding: inherit;*/
-}
-
-div {
-  margin: auto;
-}
-
-#cube2 {
-  width: 380px;
-  height: 380px;
-  background-color: #40e0d0;
-}
-
-#cube3 {
-  width: 360px;
-  height: 360px;
-  background-color: #43e8d8;
-}
-
-#cube4 {
-  width: 340px;
-  height: 340px;
-  background-color: #89ecda;
-}
-
-#cube5 {
-  width: 320px;
-  height: 320px;
-  background-color: #b3ecec;
-}
-
-#cube6 {
-  width: 300px;
-  height: 300px;
-  background-color: #ff7f50;
-}  
-
-#cube7 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 280px;
-  height: 280px;
-  background-color: #ff926a;
-}
-
-#cube8 {
-  width: 260px;
-  height: 260px;
-  background-color: #ffa483; 
-}
-
-#cube9 {
-  width: 240px;
-  height: 240px;
-  background-color: #ffb79d;
-}
-
-#cube10 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 220px;
-  height: 220px;
-  background-color: #ffcab6;
-}
-
 section {
-  position: relative;
+  min-height: 100vh;
+}
+
+#pic {
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: 100%;
+
+  background-image: url('https://cdn.pixabay.com/photo/2017/09/25/21/13/mushrooms-2786789_960_720.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+
+section.image-holder img {
+  display: block;
   width: 100%;
   height: 100vh;
-
-  border-bottom: 1px solid #ff7f50;
+  object-fit: cover; /*need to be set on the object. not the parent element, to use as background startic position need to be changed*/
 }
 
-section button {
-  position: absolute;
-  right: 30px;
-  bottom: 30px;
-
-  width: 200px;
-  height: 60px;
-  background-color: #ff7f50;
+section.background-holder {
+  background-image: url("cancada.jpg");
+  background-size: 200px 200px; /*contain-nél ismétlődik a kép*/
+  background-position: center center; /* így mindig a kép közepét próbálja tenni a reszponzív nézetnél*/ 
+  background-repeat: no-repeat;
+  background-color: black;
+  padding: 20px;
+  background-clip: content-box; /*maghatározza a méretét, nem nyúlik bele a section paadingjébe így h 20pxre van határozva*/
+  border: 10px solid rgba(15, 80, 95, 0.5)
 }
 
-/*
-#root {
-  background-color: #45ff32;
-}
-
-div.container.wrapper {
-  background-color: #131517;
-}
-
- #root .container .container {/*ugyanaz az elérési útvonal csak root idn belül 2 containert be
-
-  width: 200px;
-  height: 200px;
- } */
+/*button {
+  background-color: green;
+}*/
