@@ -1,4 +1,4 @@
- /* {
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -33,9 +33,56 @@ select {
 
 /*end of css reset*/ 
 
+body {
+  font-family: 'Zilla Slab', serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
 section {
   min-height: 100vh;
 }
+
+section.image-holder {
+  height: 100vh;
+  overflow: hidden;
+}
+
+section.image-holder img {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; 
+}
+
+section.image-holder button {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 50%;
+  width: 200px;
+  height: 60px;
+  border-radius: 30px;
+  margin: 40px 0;
+  transform: translateX(-50%);
+  background-color: #09CED9;
+  color:#59007f;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+section.image-holder h1 {
+  margin: 40px;
+  font-size: 100px;
+  font-family: 'Montserrat', sans-serif;
+  color: #59007f;
+}
+
 
 #pic {
   width: 100%;
@@ -50,25 +97,88 @@ section {
   height: 100vh;
 }
 
+#about {
+  min-width: unset;
+  background-color: #67b068;
+}
 
-section.image-holder img {
+#about article{
+  width: 100%;
+  max-width: 400px;
+  padding: 80px 20px;
+  margin: 0px auto;
+  color: #59007f;
+}
+#about h2 {
+  padding-bottom: 20px;
+}
+
+#services {
+  padding: 80px 0;
+  background-image: url(https://images.hdqwalls.com/download/mushroom-vw-1920x1080.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#services ul {
+  width: 100%;
+  max-width: 800px;
+  padding: 40px 20px;
+  margin: 0px auto;
+  list-style: none;
+  background-color: rgba(245, 222, 178, 0.6); 
+  border-radius: 15px;
+
+}
+
+#services ul li {
+  padding-bottom: 10px;
+}
+
+#services ul li h2,
+#services ul li p {
+  text-align: center;
+}
+
+#contact {
+  background-color: #629b64;
+}
+
+#contact form {
+  width: 100%;
+  max-width: 350px;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+#contact input,
+#contact label {
   display: block;
   width: 100%;
-  height: 100vh;
-  object-fit: cover; /*need to be set on the object. not the parent element, to use as background startic position need to be changed*/
 }
 
-section.background-holder {
-  background-image: url("cancada.jpg");
-  background-size: 200px 200px; /*contain-nél ismétlődik a kép*/
-  background-position: center center; /* így mindig a kép közepét próbálja tenni a reszponzív nézetnél*/ 
-  background-repeat: no-repeat;
-  background-color: black;
-  padding: 20px;
-  background-clip: content-box; /*maghatározza a méretét, nem nyúlik bele a section paadingjébe így h 20pxre van határozva*/
-  border: 10px solid rgba(15, 80, 95, 0.5)
+#contact label {
+  font-size: 18px;
+  padding-bottom: 10px;
 }
 
-/*button {
-  background-color: green;
-}*/
+#contact input {
+  height: 60px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  background-color: white;
+}
+
+#contact button {
+  width: 200px;
+  height: 60px;
+  border-radius: 30px;
+  margin: 40px 0;
+  background-color: #09CED9;
+  color:#59007f;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
