@@ -59,58 +59,58 @@ section.image-holder img {
   z-index: -1; 
 }
 
-section.image-holder button {
+section.image-holder a {
   position: absolute;
   display: block;
   bottom: 0;
   left: 50%;
+  transform: translateX(-50%);
+  
   width: 200px;
   height: 60px;
+  border: 5px solid #145214;
   border-radius: 30px;
   margin: 40px 0;
-  transform: translateX(-50%);
-  background-color: #09CED9;
-  color:#59007f;
+  padding: 10px;
+  
+  background-color: #1f7d1f;
+  color:#37054d;
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 section.image-holder h1 {
-  margin: 40px;
+  margin: 80px;
   font-size: 100px;
   font-family: 'Montserrat', sans-serif;
   color: #59007f;
 }
 
-
-#pic {
-  width: 100%;
-  padding: 0 7%;
-  display: table;
-  margin: 0;
-  max-width: 100%;
-
-  background-image: url('https://cdn.pixabay.com/photo/2017/09/25/21/13/mushrooms-2786789_960_720.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
-
 #about {
   min-width: unset;
-  background-color: #67b068;
+  max-height: fit-content;
+  padding: 100px;
+  background-image: url('https://samim.io/static/upload/Twins-in-the-Dark-Forest-764ozxxc.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
 }
 
 #about article{
   width: 100%;
-  max-width: 400px;
-  padding: 80px 20px;
+  max-width: 800px;
+  border-radius: 15px;
+  padding: 80px 40px;
   margin: 0px auto;
-  color: #59007f;
+  color: #37054d;
+  background-color: rgba(69, 179, 223, 0.6);
 }
 #about h2 {
-  padding-bottom: 20px;
+  padding-bottom: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
 }
 
 #services {
@@ -126,7 +126,7 @@ section.image-holder h1 {
   padding: 40px 20px;
   margin: 0px auto;
   list-style: none;
-  background-color: rgba(245, 222, 178, 0.6); 
+  background-color: rgba(128, 182, 78, 0.6); 
   border-radius: 15px;
 
 }
@@ -141,7 +141,7 @@ section.image-holder h1 {
 }
 
 #contact {
-  background-color: #629b64;
+  background-color: rgba(128, 182, 78);
 }
 
 #contact form {
@@ -160,13 +160,21 @@ section.image-holder h1 {
 #contact label {
   font-size: 18px;
   padding-bottom: 10px;
+  color: #37054d;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 #contact input {
   height: 60px;
   padding: 0 10px;
+  border-radius: 15px;
+  border: 5px solid #145214;
   margin-bottom: 20px;
   font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
   background-color: white;
 }
 
@@ -174,11 +182,12 @@ section.image-holder h1 {
   width: 200px;
   height: 60px;
   border-radius: 30px;
+  border: 5px solid #145214;
   margin: 40px 0;
-  background-color: #09CED9;
-  color:#59007f;
+  background-color: #1f7d1f;
+  color:#37054d;
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
