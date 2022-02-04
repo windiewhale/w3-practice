@@ -99,7 +99,7 @@ section.image-holder a {
   margin: 40px 0;
   padding: 10px;
   
-  background-color: #1f7d1f;
+  background-color: rgb(31, 125, 31);
   color:#37054d;
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
@@ -167,7 +167,7 @@ section.image-holder h1 {
 }
 
 #contact {
-  background-color: rgba(128, 182, 78);
+  background-image: linear-gradient(to left top, #7f4072, #6b5792, #486da6, #1980ac, #0090a6, #00979f, #009d91, #20a27f, #11a26f, #13a15c, #219f47, #319d2c);
 }
 
 #contact form {
